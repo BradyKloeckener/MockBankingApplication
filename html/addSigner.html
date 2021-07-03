@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='/accountinfo'>Account Information</a></li>
+                <li><a href='/history'>Transaction History</a></li>
+                <li><a href='/transfer'>Transfer</a></li>
+                <li><a href='/openAccount'>Open New Account</a></li>
+            </ul>
+        </nav>
+
+        <form id ='signerForm' method= "POST" action= "/addsigner">                   
+            <label for="ID">Signer ID: </label>
+            <input type="number" name="ID" id="ID" value=""/> 
+    
+            <label for= "accountNumber">Account Number: </label>
+            <input type="number" name ="accountNumber" id= "accountNumber" value=""/>
+    
+            <input type= "submit" value= "Add Signer"/>
+        <form>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head> </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='/accountinfo'>Account Information</a></li>
+                <li><a href='/transfer'>Transfer</a></li>
+                <li><a href='/openAccount'>Open New Account</a></li>
+                <li><a href='/addSigner'>Add Others to your Accounts</a></li>
+            </ul>
+        </nav>
+        <h1> Transaction History</h1>
+
+        <% if(data.transactions.length > 0){ %>
+            <ul>
+                <%data.transactions.forEach((item)=>{%>
+                <li>  Transaction Number: <%=item.transaction_num%>, From Account:  <%=item.sender_acc%>, To Account: <%= item.receiver_acc%>, Ammount: $<%=item.ammount%>, Time: <%=item.time_stamp%></li>
+                <%})%>
+            </ul>
+
+            <% }else{ %>
+                <div> No Transactions Made</div>
+            <%}%>
+    </body>
+</html>

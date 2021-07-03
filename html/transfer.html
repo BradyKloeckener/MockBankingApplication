@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><title> Transfer Funds</title></head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='/accountinfo'>Account Information</a></li>
+                <li><a href='/history'>Transaction History</a></li>
+                <li><a href='/openAccount'>Open New Account</a></li>
+                <li><a href='/addSigner'>Add Others to your Accounts</a></li>
+            </ul>
+        </nav>
+        <h1>Fill out the form to make a transfer</h1>
+        <div class="formcontent">
+            <form method= "POST" action= "/makeTransaction">    
+                
+                <label for="senderAccount">From Account Number </label>
+                <input type="text" id ="senderAccount" name="senderAccount" value="">
+
+                <label for="receiverAccount">To Account Number </label>
+                <input type="text" id ="receiverAccount" name="receiverAccount" value="">
+
+                <label for="Ammount">Ammount to Transfer: </label>
+                <input type="text" id ="Ammount" name='Ammount' value="">
+            
+                <input type= "submit" value= "Make Trasfer"/>
+            </form>
+ 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><title> Open a bank account</title></head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='/accountinfo'>Account Information</a></li>
+                <li><a href='/history'>Transaction History</a></li>
+                <li><a href='/transfer'>Transfer</a></li>
+                <li><a href='/addSigner'>Add Others to your Accounts</a></li>
+            </ul>
+        </nav>
+        <h1>Open A new Bank Account</h1>
+        <div class="formcontent">
+            <form method= "POST" action= "/open">    
+                
+                <label for="balance">Starting Balance: </label>
+                <input type="number" id ="balance" name="balance" value="">
+            
+                <input type= "submit" value= "Open Account"/>
+            </form>
+        </div>
+    </body>
+</html>
